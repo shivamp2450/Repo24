@@ -1,0 +1,47 @@
+import java.util.*;
+public class BankAccount {
+	public float account_number;
+	public String customer_name;
+	public double balance;
+	public double rate;
+	public BankAccount(float account_no, String name, double bal, double r)
+	{
+		account_number=account_no;
+		customer_name=name;
+		balance=bal;
+		rate=r;
+}
+	public void depositAmount(double deposit)
+	{
+		balance=balance+depo;
+	}
+	public void withdrawAmount(double withdrawl)
+	{
+		if((balance-withdrawl)>=5000)
+		{
+			balance=balance-withdrawl;
+		}
+		else
+		{
+			return;
+		}
+	}
+	public void rateOfInterest()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the rate of Interest : ");
+		rate=sc.nextDouble();
+	}
+	public void displayAccountDetails()
+	{
+		System.out.println("Account number : "+account number);
+		System.out.println("Name of Customer : "+customer name);
+		System.out.println("Balance : "+balance);
+		System.out.println("Rate of Interest : "+rate);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
